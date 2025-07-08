@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fresh Mart.Com</title>
+  <link rel="stylesheet" href="../Css/Home.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/14062/14062234.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to Top">&#8679;</button>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="desktopNavbar">
+    <div class="navbar-left">
+      <a href="../Pages/Home.html" class="logo-link">
+        <img src="https://cdn-icons-png.flaticon.com/128/14062/14062234.png" alt="Logo" />
+        Fresh Mart
+      </a>
+    </div>
+
+    <div class="navbar-middle">
+      <ul>
+        <li>
+          <a href="../Pages/Home.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Products</a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown-grid">
+              <div class="mega-dropdown-section">
+                <h4>Electronics</h4>
+                <ul>
+                  <li><a href="#">Smartphones</a></li>
+                  <li><a href="#">Laptops</a></li>
+                  <li><a href="#">Headphones</a></li>
+                  <li><a href="#">Tablets</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown-section">
+                <h4>Home Appliances</h4>
+                <ul>
+                  <li><a href="#">Refrigerators</a></li>
+                  <li><a href="#">Microwaves</a></li>
+                  <li><a href="#">Washing Machines</a></li>
+                  <li><a href="#">Televisions</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown-section">
+                <h4>Fashion</h4>
+                <ul>
+                  <li><a href="#">Men's Clothing</a></li>
+                  <li><a href="#">Women's Clothing</a></li>
+                  <li><a href="#">Shoes</a></li>
+                  <li><a href="#">Watches</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown-section">
+                <h4>Accessories</h4>
+                <ul>
+                  <li><a href="#">Bags</a></li>
+                  <li><a href="#">Sunglasses</a></li>
+                  <li><a href="#">Jewelry</a></li>
+                  <li><a href="#">Wallets</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="../Pages/Service.html">Services</a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown-grid">
+              <div class="mega-dropdown-section">
+                <h4>Support</h4>
+                <ul>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Warranty</a></li>
+                  <li><a href="#">Shipping Info</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown-section">
+                <h4>Business</h4>
+                <ul>
+                  <li><a href="#">Corporate</a></li>
+                  <li><a href="#">Wholesale</a></li>
+                  <li><a href="#">Partnerships</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="../Pages/About.html">About</a></li>
+        <li><a href="../Pages/Supply.html">Become a Supplier</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-right">
+      <a href="#" class="login-btn">Login</a>
+    </div>
+  </nav>
+
+  <div class="mobile-top-row" id="mobileTopRow">
+    <div class="location-address">
+      <i data-lucide="map-pin"></i>
+      <span>123 Mehsana, Gujrat</span>
+    </div>
+    <div class="mobile-notification" style="position: relative; display: inline-block;">
+      <i data-lucide="bell" style="width: 24px; height: 24px; color: black;"></i>
+      <span class="notification-badge"
+        style="position: absolute; top: -5px; right: -5px; background-color: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px;">
+        3
+      </span>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <div class="mobile-search">
+    <div class="search-container">
+      <div class="search-input">
+        <i data-lucide="search" class="search-icon"></i>
+        <input type="text" placeholder="Search products, services..." />
+      </div>
+      <button class="menu-btn" id="mobileMenuBtn">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../Pages/Home.html" class="logo-link">
+        <img src="https://cdn-icons-png.flaticon.com/128/14062/14062234.png" alt="Fresh Mart Logo"
+          class="sidebar-logo" />
+      </a>
+      <h2 class="sidebar-title">Fresh Mart</h2>
+      <button class="sidebar-close-btn" id="sidebarClose" aria-label="Close Sidebar">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <ul>
+      <li>
+        <a href="../Pages/Home.html" class="active">
+          <i data-lucide="home"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i data-lucide="shopping-bag"></i>
+          Products
+        </a>
+      </li>
+      <li>
+        <a href="../Pages/Service.html">
+          <i data-lucide="settings"></i>
+          Services
+        </a>
+      </li>
+      <li>
+        <a href="../Pages/About.html">
+          <i data-lucide="info"></i>
+          About
+        </a>
+      </li>
+      <li>
+        <a href="../Pages/Supply.html">
+          <i data-lucide="handshake"></i>
+          Become a Supplier
+        </a>
+      </li>
+    </ul>
+
+    <div class="sidebar-extra">
+      <a href="#" class="login-btn-sidebar">Login <i data-lucide="log-in"></i>
+      </a>
+      </a>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <div class="modal" id="authModal">
+    <div class="modal-header">
+      <h2 id="modalTitle">Login</h2>
+      <button class="close-btn" id="closeModal">&times;</button>
+    </div>
+
+    <div class="modal-tabs">
+      <div class="modal-tab active" id="loginTab">Login</div>
+      <div class="modal-tab" id="signupTab">Sign Up</div>
+    </div>
+
+    <div class="modal-body">
+      <!-- Login Form -->
+      <form id="loginForm" class="auth-form">
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Enter your password" required />
+        </div>
+        <button type="submit" class="form-submit">Login</button>
+        <p class="form-footer">Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+      </form>
+
+      <!-- Sign Up Form -->
+      <form id="signupForm" class="auth-form" style="display: none;">
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" placeholder="Enter your full name" required />
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" placeholder="Create a password" required />
+        </div>
+        <button type="submit" class="form-submit">Sign Up</button>
+        <p class="form-footer">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Hero section -->
+
+  <body class="text-white">
+    <section class="hero-section flex items-center">
+      <div class="hero-overlay absolute inset-0 z-0"></div>
+      <div class="container mx-auto px-4 sm:px-6 relative z-10 hero-content">
+        <div class="max-w-2xl text-center sm:text-left">
+          <span
+            class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-white bg-blue-500 rounded-full">
+            SUMMER SALE
+          </span>
+          <h1 class="text-2xl sm:text-2xl md:text-5xl lg:text-3xl font-bold leading-tight mb-3">
+            New Collection 2025
+          </h1>
+
+          <p class="text-base sm:text-lg md:text-xl mb-8 opacity-80">
+            Discover our exclusive summer collection with up to 50% off on selected items. Limited time offer!
+          </p>
+
+          <div class="hero-buttons flex flex-col sm:flex-row gap-4 mb-8 sm:mb-12 justify-center sm:justify-start">
+            <a href=""
+              class="btn-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium text-base sm:text-lg flex items-center justify-center">
+              Shop Now
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+
+            <a href=""
+              class="btn-secondary border-2 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium text-base sm:text-lg flex items-center justify-center">
+              View Collection
+            </a>
+          </div>
+
+          <div class="flex justify-center sm:justify-start gap-2 sm:gap-4">
+            <div class="countdown-item px-3 sm:px-4 py-2 rounded-lg flex flex-col items-center">
+              <span class="text-xl sm:text-2xl font-bold">03</span>
+              <span class="text-xs opacity-80">Days</span>
+            </div>
+            <div class="countdown-item px-3 sm:px-4 py-2 rounded-lg flex flex-col items-center">
+              <span class="text-xl sm:text-2xl font-bold">12</span>
+              <span class="text-xs opacity-80">Hours</span>
+            </div>
+            <div class="countdown-item px-3 sm:px-4 py-2 rounded-lg flex flex-col items-center">
+              <span class="text-xl sm:text-2xl font-bold">45</span>
+              <span class="text-xs opacity-80">Minutes</span>
+            </div>
+            <div class="countdown-item px-3 sm:px-4 py-2 rounded-lg flex flex-col items-center">
+              <span class="text-xl sm:text-2xl font-bold">30</span>
+              <span class="text-xs opacity-80">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- Product categories -->
+  <div class="categories-container">
+    <div class="categories-header">
+      <h2>Shop by Category</h2>
+      <a href="../test.html" class="see-all-link">See all</a>
+    </div>
+
+    <div class="categories-grid">
+      <a href="../Pages/Womenfashion.html" class="category-card">
+        <div class="image-container">
+          <img src="https://images.meesho.com/images/marketing/1744634654837.webp" alt="Electronics" />
+        </div>
+        <div class="category-name">Ethnic Wear</div>
+      </a>
+
+      <a href="../Pages/Womenfashion.html" class="category-card">
+        <div class="image-container">
+          <img src="https://images.meesho.com/images/marketing/1744634725496.webp" alt="Fashion" />
+        </div>
+        <div class="category-name">Western Dresses</div>
+      </a>
+
+      <a href="../Pages/Menfashion.html" class="category-card">
+        <div class="image-container">
+          <img src="https://images.meesho.com/images/marketing/1744634780426.webp" alt="Home & Garden" />
+        </div>
+        <div class="category-name">Mens Wear</div>
+      </a>
+
+      <a href="../Pages/Menfashion.html" class="category-card">
+        <div class="image-container">
+          <img src="https://images.meesho.com/images/marketing/1744634814643.webp" alt="Sports" />
+        </div>
+        <div class="category-name">Footwear</div>
+      </a>
+
+      <a href="" class="category-card">
+        <div class="image-container">
+          <img src="https://images.meesho.com/images/marketing/1744634835018.webp" alt="Beauty" />
+        </div>
+        <div class="category-name">Home Decor</div>
+      </a>
+
+      <a href="" class="category-card">
+        <div class="image-container">
+          <img src="https://images.meesho.com/images/marketing/1744634871107.webp" alt="Books" />
+        </div>
+        <div class="category-name">Beauty</div>
+      </a>
+
+      <a href="" class="category-card">
+        <div class="image-container">
+          <img src="https://images.meesho.com/images/marketing/1744634909968.webp" alt="Toys" />
+        </div>
+        <div class="category-name">Accessories</div>
+      </a>
+
+      <a href="" class="category-card">
+        <div class="image-container">
+          <img src="https://images.meesho.com/images/marketing/1744634937295.webp" alt="Automotive" />
+        </div>
+        <div class="category-name">Grocery</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Shop section 1 -->
+  <section class="shop-section">
+    <div class="items-container">
+      <button class="scroll-button left" onclick="scrollItems('left')">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <div class="items-scroll" id="itemsScroll">
+        <!-- Item 1 -->
+        <div class="shop-item">
+          <img src="https://m.media-amazon.com/images/I/418yZ-1ZDzL._SX300_SY300_QL70_FMwebp_.jpg"
+            alt="Premium Headphones" class="item-image" />
+          <div class="item-content">
+            <h3 class="item-title">Redmi Note 14 Pro 5G</h3>
+            <p class="item-description">
+              (Ivy Green, 8GB RAM+ 128GB Storage) | Mediatek Dimensity 7300
+              Ultra Processor | AMOLED Display | Dual Nano-SIM | 5500mAh
+              Battery
+            </p>
+            <p class="item-rating">★★★★★</p>
+            <p class="item-price">₹24,990</p>
+            <a href="../user/Login.html">More detail</a>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="shop-item">
+          <img src="https://m.media-amazon.com/images/I/31USb6P2YJL._SY445_SX342_QL70_FMwebp_.jpg"
+            alt="Premium Headphones" class="item-image" />
+          <div class="item-content">
+            <h3 class="item-title">Daikin 1.5 Ton AC</h3>
+            <p class="item-description">
+              Daikin 1.5 Ton 5 Star Inverter Split AC (Copper, PM 2.5 Filter,
+              MTKM50U, White)
+            </p>
+            <p class="item-rating">★★★★★</p>
+            <p class="item-price">₹45,990</p>
+            <a href="#">More detail</a>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="shop-item">
+          <img src="https://m.media-amazon.com/images/I/71aFqco50fL._SY879_.jpg" alt="Premium Headphones"
+            class="item-image" />
+          <div class="item-content">
+            <h3 class="item-title">Polo T-shirt</h3>
+            <p class="item-description">
+              Symbol Premium Men's Solid Super Soft Classic Polo T-Shirt:
+              Regular Fit
+            </p>
+            <p class="item-rating">★★★★★</p>
+            <p class="item-price">₹989</p>
+            <a href="#">More detail</a>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="shop-item">
+          <img src="https://m.media-amazon.com/images/I/51ZR4lyxBHL._SX522_.jpg" alt="Premium Headphones"
+            class="item-image" />
+          <div class="item-content">
+            <h3 class="item-title">headphones</h3>
+            <p class="item-description">
+              Bose New QuietComfort Ultra Wireless Noise Cancelling Headphones
+              with Spatial Audio, Over-The-Ear Headphones with Mic, Up to 24
+              Hours of Battery Life, Black
+            </p>
+            <p class="item-rating">★★★★★</p>
+            <p class="item-price">₹35,900</p>
+            <a href="#">More detail</a>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="shop-item">
+          <img src="https://m.media-amazon.com/images/I/81S+2GhyIlL._SY741_.jpg" alt="Premium Headphones"
+            class="item-image" />
+          <div class="item-content">
+            <h3 class="item-title">kurta and pants</h3>
+            <p class="item-description">
+              KLOSIA Women's Viscose Kurta and Pant with Dupatta Set with
+              fancy design
+            </p>
+            <p class="item-rating">★★★★★</p>
+            <p class="item-price">₹699</p>
+            <a href="#">More detail</a>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="shop-item">
+          <img src="https://m.media-amazon.com/images/I/6173z+HKivL._SX522_.jpg" alt="Premium Headphones"
+            class="item-image" />
+          <div class="item-content">
+            <h3 class="item-title">boAt Nirvana lvy</h3>
+            <p class="item-description">
+              boAt Nirvana Ivy, 50dB Hybrid Active Noise Cancellation, 360º
+              Spatial Audio,Fast Charge,App Support, v5.3 Bluetooth Earbuds,
+              TWS Ear Buds Wireless Earphones with mic (Gunmetal White)
+            </p>
+            <p class="item-rating">★★★★★</p>
+            <p class="item-price">₹3,299</p>
+            <a href="#">More detail</a>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="shop-item">
+          <img src="https://m.media-amazon.com/images/I/61V1pB-2JRL._SX679_.jpg" alt="Premium Headphones"
+            class="item-image" />
+          <div class="item-content">
+            <h3 class="item-title">helmet</h3>
+            <p class="item-description">
+              Ignyte IGN-4 Trever ISI / DOT Certified Double Visor Full Face
+              Helmet Outer Anti-Fog Clear Visor and Inner Smoke Sun Shield
+            </p>
+            <p class="item-rating">★★★★★</p>
+            <p class="item-price">₹3,324</p>
+            <a href="#">More detail</a>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="shop-item">
+          <img src="https://m.media-amazon.com/images/I/51IcZdoC+-L._SX342_SY445_.jpg" alt="Premium Headphones"
+            class="item-image" />
+          <div class="item-content">
+            <h3 class="item-title">Microwave Oven</h3>
+            <p class="item-description">
+              IFB 20 L Convection Microwave Oven (20SC2, Metallic Silver, With
+              Starter Kit), STANDARD
+            </p>
+            <p class="item-rating">★★★★★</p>
+            <p class="item-price">₹11,290</p>
+            <a href="#">More detail</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="scroll-button right" onclick="scrollItems('right')">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- Text advertise section -->
+  <div class="ad-container">
+    <div class="ad-card sale">
+      <div class="discount-badge">50% OFF</div>
+      <div class="ad-title">Flash Sale</div>
+      <div class="ad-subtitle">Limited time offer on selected items</div>
+      <a href="#"><button class="ad-cta">Shop Now</button></a>
+      <div class="ad-icon">⭐</div>
+    </div>
+
+    <div class="ad-card premium">
+      <div class="ad-title">Premium Collection</div>
+      <div class="ad-subtitle">Exclusive designs & premium quality</div>
+      <a href="#"><button class="ad-cta">Explore</button></a>
+      <div class="ad-icon">🔥</div>
+    </div>
+
+    <div class="ad-card seasonal">
+      <div class="discount-badge">NEW</div>
+      <div class="ad-title">Spring Arrivals</div>
+      <div class="ad-subtitle">Fresh styles for the new season</div>
+      <a href="#"><button class="ad-cta">View Collection</button></a>
+      <div class="ad-icon">🌱</div>
+    </div>
+  </div>
+
+  <!-- Shop section 2 -->
+  <div class="shop-card-wrapper">
+    <div class="shop-card-section">
+      <!-- item 1 -->
+      <div class="shop-card">
+        <div class="product-title">
+          <p>Playstation 5 slim & Accessories | No cost EMI*</p>
+        </div>
+        <div class="products-grid">
+          <div class="product-item">
+            <a href="#smartphone" class="product-link">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/VG/Nanditha/BI/QC-4--1x._SY116_CB793233792_.jpg"
+                alt="Smartphone" class="product-image" />
+              <div class="product-info">
+                <div class="product-name">ps5 slim digital edition</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item">
+            <a href="#smartphone" class="product-link">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/VG/Nanditha/BI/QC-3--1x._SY116_CB793233792_.jpg"
+                alt="Smartphone" class="product-image" />
+              <div class="product-info">
+                <div class="product-name">ps5 slim disc edition</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item">
+            <a href="#smartphone" class="product-link">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/VG/Nanditha/BI/QC-1--1x._SY116_CB793233792_.jpg"
+                alt="Smartphone" class="product-image" />
+              <div class="product-info">
+                <div class="product-name">
+                  ps5 slim fortnite digital edition
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item">
+            <a href="#smartphone" class="product-link">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/VG/Nanditha/BI/QC-6--1x._SY116_CB793243872_.jpg"
+                alt="Smartphone" class="product-image" />
+              <div class="product-info">
+                <div class="product-name">
+                  ps5 dualsense wireless controller
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="#">See all deals</a>
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div class="shop-card">
+        <div class="product-title">
+          <p>Revamp your home in style</p>
+        </div>
+        <div class="products-grid">
+          <div class="product-item">
+            <a href="#smartphone" class="product-link">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg"
+                alt="Smartphone" class="product-image" />
+              <div class="product-info">
+                <div class="product-name">
+                  cushion covers, badsheet & more
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item">
+            <a href="#smartphone" class="product-link">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+                alt="Smartphone" class="product-image" />
+              <div class="product-info">
+                <div class="product-name">figurines, vases & more</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item">
+            <a href="#smartphone" class="product-link">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg"
+                alt="Smartphone" class="product-image" />
+              <div class="product-info">
+                <div class="product-name">Home storage</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item">
+            <a href="#smartphone" class="product-link">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg"
+                alt="Smartphone" class="product-image" />
+              <div class="product-info">
+                <div class="product-name">lighting solution</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="#">See more</a>
+        </div>
+      </div>
+
+      <!-- item 3 -->
+      <div class="shop-card">
+        <div class="product-title">
+          <p>Automotive essentials | Up to 70% off</p>
+        </div>
+        <div class="products-grid">
+          <div class="product-item">
+            <a href="#smartphone" class="product-link">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg"
+                alt="Smartphone" class="product-image" />
+              <div class="product-info">
+                <div class="product-name">cleaning accessories</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item">
+            <a href="#smartphone" class="product-link">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg"
+                alt="Smartphone" class="product-image" />
+              <div class="product-info">
+                <div class="product-name">tyre & rim care</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item">
+            <a href="#smartphone" class="product-link">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg"
+                alt="Smartphone" class="product-image" />
+              <div class="product-info">
+                <div class="product-name">helmets</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item">
+            <a href="#smartphone" class="product-link">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg"
+                alt="Smartphone" class="product-image" />
+              <div class="product-info">
+                <div class="product-name">vacuum cleaner</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="#">Explore all</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots"></div>
+  </div>
+
+  <!-- Shop section 3 -->
+  <div class="slider-wrapper-3">
+    <div class="shop-card-section-3">
+      <!-- item 1 -->
+      <div class="shop-card-3">
+        <div class="product-title-3">
+          <p>Min 50% off | Fun toys & games | Fresh Mart Brands</p>
+        </div>
+        <div class="products-grid-3">
+          <div class="product-item-3">
+            <a href="#smartphone" class="product-link-3">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/Baby_toys/baby/QC_PC_186x116_9._SY116_CB563558900_.jpg"
+                alt="Smartphone" class="product-image-3" />
+              <div class="product-info-3">
+                <div class="product-name-3">Min 50% off | Soft toys</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item-3">
+            <a href="#smartphone" class="product-link-3">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/Baby_toys/toys/QC_PC_186x116_22._SY116_CB541411275_.jpg"
+                alt="Smartphone" class="product-image-3" />
+              <div class="product-info-3">
+                <div class="product-name-3">Min 40% off | Ride ons</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item-3">
+            <a href="#smartphone" class="product-link-3">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/Baby_toys/toys/QC_PC_186x116_13._SY116_CB541414575_.jpg"
+                alt="Smartphone" class="product-image-3" />
+              <div class="product-info-3">
+                <div class="product-name-3">Min 40% off | indoor games</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item-3">
+            <a href="#smartphone" class="product-link-3">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/Baby_toys/toys/QC_PC_186x116_16._SY116_CB541411275_.jpg"
+                alt="Smartphone" class="product-image-3" />
+              <div class="product-info-3">
+                <div class="product-name-3">Min 50% off | outdoor games</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card-footer-3">
+          <a href="#">See all deals</a>
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div class="shop-card-3">
+        <div class="product-title-3">
+          <p>Keep Shopping for</p>
+        </div>
+        <div class="products-grid-3">
+          <div class="product-item-3">
+            <a href="#smartphone" class="product-link-3">
+              <img src="https://m.media-amazon.com/images/I/71cLMTuXtZL._AC_SY95_.jpg" alt="Smartphone"
+                class="product-image-3" />
+              <div class="product-info-3">
+                <div class="product-name-3">Alvami Women Anarkal...</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item-3">
+            <a href="#smartphone" class="product-link-3">
+              <img src="https://m.media-amazon.com/images/I/51NtxvJ5dYL._AC_SY95_.jpg" alt="Smartphone"
+                class="product-image-3" />
+              <div class="product-info-3">
+                <div class="product-name-3">Nermosa Women Print...</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item-3">
+            <a href="#smartphone" class="product-link-3">
+              <img src="https://m.media-amazon.com/images/I/71aFqco50fL._AC_SY95_.jpg" alt="Smartphone"
+                class="product-image-3" />
+              <div class="product-info-3">
+                <div class="product-name-3">Symbol Premium Men's...</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-item-3">
+            <a href="#smartphone" class="product-link-3">
+              <img src="https://m.media-amazon.com/images/I/616hpmXeqfL._AC_SY95_.jpg" alt="Smartphone"
+                class="product-image-3" />
+              <div class="product-info-3">
+                <div class="product-name-3">Van Heusen Men's soli...</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card-footer-3">
+          <a href="../Pages/Menfashion.html">See more</a>
+        </div>
+      </div>
+
+      <!-- item 3 -->
+      <div class="shop-card-3">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt_0.5x._SY116_CB553870684_.jpg"
+          alt="Brand" class="product-image-3" />
+        <div class="text-btn">
+          <h2>Explore the Most Trending Product in Fresh Mart</h2>
+          <p>Sign in for your best experience</p>
+          <a href="../Pages/Signin.html"><button>sign in securely</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots-3"></div>
+  </div>
+
+  <!-- Advertisement banner -->
+  <section class="banner-section">
+    <img src="https://images.meesho.com/images/marketing/1744698265981.webp" alt="Hero" class="hero-image" />
+
+    <a href="" class="shop-now-btn"> Shop Now </a>
+
+    <div class="thumbnails">
+      <a href="../Pages/Womenfashion.html" class="thumbnail">
+        <img src="https://images.meesho.com/images/marketing/1744635139351.webp" alt="Thumb 1" />
+      </a>
+      <a href="../Pages/Menfashion.html" class="thumbnail">
+        <img src="https://images.meesho.com/images/marketing/1744635113661.webp" alt="Thumb 3" />
+      </a>
+      <a href="../Pages/Womenfashion.html" class="thumbnail">
+        <img src="https://images.meesho.com/images/marketing/1744722796811.webp" alt="Thumb 2" />
+      </a>
+
+      <a href="" class="thumbnail">
+        <img src="https://images.meesho.com/images/marketing/1744635189897.webp" alt="Thumb 4" />
+      </a>
+    </div>
+  </section>
+
+  <!-- Shop section 4 -->
+  <section class="shop-section-4">
+    <div class="shop-container-4" id="slider">
+      <!-- item 1 -->
+      <div class="shop-card-4">
+        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/monitor/i/d/u/-original-imah2phfsacndzmb.jpeg?q=70"
+          alt="Item 1" class="item-img-4" />
+        <div class="section-content-4">
+          <h3 class="item-title-4">Acer Full HD LED</h3>
+          <p class="item-description-4">
+            Acer 80.01 cm (31.5 inch) Full HD LED Backlit IPS Panel with VGA,
+            HDMI, 2X1W Inbuilt Speakers, Flicker-less, Blue light Shield,
+            EcoDisplay, VisionCare, Tilt-able Stand, VESA wall Mount
+            Ultra-Thin Monitor (SA322Q) (Frameless, AMD Free Sync, Response
+            Time: 1 ms, 75 Hz Refresh Rate)
+          </p>
+          <p class="item-rating-4">★★★★☆</p>
+          <p class="item-price-4">
+            <span class="item-price-4">₹12,999</span>
+            <span class="original-price" style="
+                  text-decoration: line-through;
+                  color: gray;
+                  margin-left: 5px;
+                ">₹18,999</span>
+            <span class="discount" style="color: green; font-weight: bold; margin-left: 5px">32% off</span>
+          </p>
+          <a href="#">See more product</a>
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div class="shop-card-4">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/z/r/d/-original-imagywnzhh3dnqvk.jpeg?q=70"
+          alt="Item 1" class="item-img-4" />
+        <div class="section-content-4">
+          <h3 class="item-title-4">Fastract Optimus Pro Smartwatch</h3>
+          <p class="item-description-4">
+            Fastrack Optimus Pro with 1.43 AMOLED Display &
+            AOD(466x466),Functional Crown,BT Calling Smartwatch (Blue Strap,
+            Free Size)
+          </p>
+          <p class="item-rating-4">★★★★☆</p>
+          <p class="item-price-4">
+            <span class="item-price-4">₹2,995</span>
+            <span class="original-price" style="
+                  text-decoration: line-through;
+                  color: gray;
+                  margin-left: 5px;
+                ">₹5,995</span>
+            <span class="discount" style="color: green; font-weight: bold; margin-left: 5px">50% off</span>
+          </p>
+          <a href="#">More detail</a>
+        </div>
+      </div>
+
+      <!-- item 3 -->
+      <div class="shop-card-4">
+        <img
+          src="https://rukminim2.flixcart.com/image/420/420/xif0q/backpack/3/s/o/12-men-and-women-backpack-for-school-bag-college-bag-12-hinex-original-imah4rm2sy3dfuap.jpeg?q=60"
+          alt="Item 1" class="item-img-4" />
+        <div class="section-content-4">
+          <h3 class="item-title-4">Laptop Backpack</h3>
+          <p class="item-description-4">HINEX BAG
+            Large 35 L Laptop Backpack men and women backpack for school bag college bag (Blue)</p>
+          <p class="item-rating-4">★★★★☆</p>
+          <p class="item-price-4">
+            <span class="item-price-4">₹313</span>
+            <span class="original-price" style="
+                  text-decoration: line-through;
+                  color: gray;
+                  margin-left: 5px;
+                ">₹2,499</span>
+            <span class="discount" style="color: green; font-weight: bold; margin-left: 5px">87% off</span>
+          </p>
+          <a href="#">See more</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+
+  <!-- Shop section 5 -->
+  <section class="shop-section-5">
+    <div class="shop-container-5" id="sliderContainer-5">
+      <!-- item 1 -->
+      <div class="shop-card-5">
+        <img src="https://m.media-amazon.com/images/I/517wa7Es8uL._SY741_.jpg" alt="Product 1" class="item-img-5" />
+        <div class="section-content-5">
+          <h3 class="item-title-5">Men's Polo T-shirt</h3>
+          <p class="item-description-5">Lux Cozi Men's Cotton Regular Fit Polo T-Shirt</p>
+          <p class="item-rating-5">★★★★☆</p>
+          <p class="item-price-5">
+            ₹349
+            <span class="original-price" style="text-decoration: line-through; color: gray; margin-left: 5px;">M.R.P.:
+              ₹380</span>
+            <span class="discount" style="color: green; font-weight: bold; margin-left: 5px">-8% off</span>
+          </p>
+          <a href="../Pages/Menfashion.html">Best seller</a>
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div class="shop-card-5">
+        <img src="https://m.media-amazon.com/images/I/71C-0lulUkL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 1"
+          class="item-img-5" />
+        <div class="section-content-5">
+          <h3 class="item-title-5">Curtain 7 Feet</h3>
+          <p class="item-description-5">STITCHNEST PVC Transparent AC Curtain | Water Proof Quick Water Release |
+            Curtain 7 Feet</p>
+          <p class="item-rating-5">★★★★☆</p>
+          <p class="item-price-5">
+            ₹269
+            <span class="original-price" style="text-decoration: line-through; color: gray; margin-left: 5px;">M.R.P.:
+              ₹999</span>
+            <span class="discount" style="color: green; font-weight: bold; margin-left: 5px">-73% off</span>
+          </p>
+          <a href="#">More detail</a>
+        </div>
+      </div>
+
+      <!-- item 3 -->
+      <div class="shop-card-5">
+        <img src="https://m.media-amazon.com/images/I/41fGcLhBdAL._SY300_SX300_QL70_FMwebp_.jpg" alt="Product 1"
+          class="item-img-5" />
+        <div class="section-content-5">
+          <h3 class="item-title-5">Bedsheet</h3>
+          <p class="item-description-5">BSB HOME® 100% Cotton 160 TC Big Flower Printed Single Bedsheets with 1 King
+            Size Pillow Cover, (60X90 Inches, 4 X 6 Feet, Brown and White)
+          </p>
+          <p class="item-rating-5">★★★★☆</p>
+          <p class="item-price-5">
+            ₹150
+            <span class="original-price" style="text-decoration: line-through; color: gray; margin-left: 5px;">M.R.P.:
+              ₹799</span>
+            <span class="discount" style="color: green; font-weight: bold; margin-left: 5px">-80% off</span>
+          </p>
+          <a href="#">See all offer</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots-5" id="sliderDots-5"></div>
+  </section>
+
+  <!-- Slider item section 1 -->
+  <div class="slider-wrapper2">
+    <div class="slider-track2" id="sliderTrack2">
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/81S+2GhyIlL._AC_SY200_.jpg" alt="1" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/71mX4WATh-L._AC_SY200_.jpg" alt="2" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/71l2sZoikXL._AC_SY200_.jpg" alt="3" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/61IhrjrcrLL._AC_SY200_.jpg" alt="4" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/61sxFQiC9xL._AC_SY200_.jpg" alt="5" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/715nDdTQL+L._AC_SY200_.jpg" alt="6" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/71T-yPIj-sL._AC_SY200_.jpg" alt="7" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/61r99GrEgcL._AC_SY200_.jpg" alt="8" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/61XdBhGNeLL._AC_SY200_.jpg" alt="9" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/61SgADmAyDL._AC_SY200_.jpg" alt="10" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/51suEsggRLL._AC_SY200_.jpg" alt="11" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/71WDoLOM8PL._AC_SY200_.jpg" alt="12" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/51A4rCSVW9L._AC_SY200_.jpg" alt="13" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/71Xvagl5gsL._AC_SY200_.jpg" alt="14" /></a></div>
+      <div class="product2"><a href="../Pages/Womenfashion.html"><img
+            src="https://m.media-amazon.com/images/I/61MYdJBw6BL._AC_SY200_.jpg" alt="15" /></a></div>
+    </div>
+
+    <div class="nav-buttons-minimal">
+      <button id="prevBtn2" class="nav-button-minimal" aria-label="Previous">
+        <span>←</span>
+      </button>
+      <button id="nextBtn2" class="nav-button-minimal" aria-label="Next">
+        <span>→</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Slider item section 2 -->
+  <div class="slider-wrapper3">
+    <div class="slider-track3" id="sliderTrack3">
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/71aFqco50fL._AC_SY200_.jpg" alt="1" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/616hpmXeqfL._AC_SY200_.jpg" alt="2" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/61GuKc2R7kL._AC_SY200_.jpg" alt="3" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/71eUwDk8z+L._AC_SY200_.jpg" alt="4" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/61B1JpINdRL._AC_SY200_.jpg" alt="5" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/61zJyG+p4lL._AC_SY200_.jpg" alt="6" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/81vHlgI1+dL._AC_SY200_.jpg" alt="7" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/51xOEh5DKYL._AC_SY200_.jpg" alt="8" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/6107f+NZCLL._AC_SY200_.jpg" alt="9" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/71NJJsDK3aL._AC_SY200_.jpg" alt="10" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/61Q5Sa-TL7L._AC_SY200_.jpg" alt="11" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/71k-uB4eJOL._AC_SY200_.jpg" alt="12" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/51n5kc-mfTL._AC_SY200_.jpg" alt="13" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/619K4uYGj6L._AC_SY200_.jpg" alt="14" /></a></div>
+      <div class="product3"><a href="../Pages/Menfashion.html"><img
+            src="https://m.media-amazon.com/images/I/71YEBIno1gL._AC_SY200_.jpg" alt="15" /></a></div>
+    </div>
+
+    <div class="nav-buttons-minimal">
+      <button id="prevBtn3" class="nav-button-minimal" aria-label="Previous">
+        <span>←</span>
+      </button>
+      <button id="nextBtn3" class="nav-button-minimal" aria-label="Next">
+        <span>→</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mega product section -->
+  <div class="mega-product-section">
+
+    <div class="mega-product">
+      <img src="https://m.media-amazon.com/images/I/41p3KmfI-1L._SX300_SY300_QL70_FMwebp_.jpg" alt="product">
+      <div class="mega-product-detail">
+        <div class="mega-product-title">Fruitri Premium Kashmiri Walnut Kernels - 200gm,..</div>
+        <div class="mega-rating-star">★★★★☆<span>8,732</span></div>
+        <div class="mega-product-offer"><button>Save 5%</button><span>With Subscribe and Save</span></div>
+        <div class="mega-product-price">₹379</div>
+        <div class="mega-product-btn"><a href=""><button>Shop Now</button></a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shop section 6 -->
+  <div class="product-container6" id="slider6">
+    <!-- Card 1 -->
+    <div class="card6">
+      <h2 class="card-title6">Starting ₹149 | Freshness you can taste</h2>
+      <img src="https://m.media-amazon.com/images/I/61ZDITg+6UL._SY741_.jpg" alt="Wireless Headphones"
+        class="card-image6" />
+      <div class="card-content6">
+        <p class="card-description6">BANGLARMISTI Desi Cow Ghee | Rich Aroma, Danedar, Delicious & Nutritious, Pure
+          Homemade…
+        </p>
+        <div class="price6">
+          <span class="mrp6">₹350</span>
+          <span class="org-price6">M.R.P.: ₹599</span>
+          <span class="discounted-price6">-20% off</span>
+        </div>
+        <div class="preview-images6">
+          <img src="https://m.media-amazon.com/images/I/61ZDITg+6UL._SY741_.jpg" alt="font view"
+            class="preview6 active6">
+          <img src="https://m.media-amazon.com/images/I/71dp5pAo77L._SX679_.jpg" alt="Front View" class="preview6" />
+          <img src="https://m.media-amazon.com/images/I/816RXH6CsCL._SX679_.jpg" alt="Side View" class="preview6" />
+          <img src="https://m.media-amazon.com/images/I/41Rm-U3SA-L._SX300_SY300_QL70_FMwebp_.jpg" alt="Back View"
+            class="preview6" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card6">
+      <h2 class="card-title6">Starting ₹499 | Sparkle up your everyday style</h2>
+      <img src="https://m.media-amazon.com/images/I/61dcsCAvFiL._SY625_.jpg" alt="Smart Fitness Watch"
+        class="card-image6" />
+      <div class="card-content6">
+        <p class="card-description6">Adc fashions Antique Stone Jewellery Set for Women, Choker Necklace for Women
+          with Flower…</p>
+        <div class="price6">
+          <span class="mrp6">₹499</span>
+          <span class="org-price6">M.R.P.:₹1000.00</span>
+          <span class="discounted-price6">-50% off</span>
+        </div>
+        <div class="preview-images6">
+          <img src="https://m.media-amazon.com/images/I/71bX3HHYv+L._SX625_.jpg" alt="Front View"
+            class="preview6 active6" />
+          <img src="https://m.media-amazon.com/images/I/71Cj2chZVXL._SY625_.jpg" alt="Side View" class="preview6" />
+          <img src="https://m.media-amazon.com/images/I/619oDceOgyL._AC_SY175_.jpg" alt="Back View" class="preview6" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card6">
+      <h2 class="card-title6">Up to 50% off | Unique picks from Government emporiums</h2>
+      <img src="https://m.media-amazon.com/images/I/5166it0FGKL._SX300_SY300_QL70_FMwebp_.jpg" alt="Bluetooth Speaker"
+        class="card-image6" />
+      <div class="card-content6">
+        <p class="card-description6">Saras Aajeevika Handcrafted Handpainted Wooden Up Trunk Elephant│ Handcrafted
+          Artistic Gift...</p>
+        <div class="price6">
+          <span class="mrp6">₹1,349</span>
+          <span class="org-price6">M.R.P.:₹2,100</span>
+          <span class="discounted-price6">-36% off</span>
+        </div>
+        <div class="preview-images6">
+          <img src="https://m.media-amazon.com/images/I/51mzvn823XL._SX300_SY300_QL70_FMwebp_.jpg" alt="Front View"
+            class="preview6 active6" />
+          <img src="https://m.media-amazon.com/images/I/41S2SRtUlcL._SX300_SY300_QL70_FMwebp_.jpg" alt="Side View"
+            class="preview6" />
+          <img src="https://m.media-amazon.com/images/I/615HaxqoWxL._SX679_.jpg" alt="Back View" class="preview6" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dot-container6" id="dots6"></div>
+
+  <!-- Shop section 7 -->
+  <div class="section-7-slider-container" id="section7-slider">
+    <!-- Card 1 -->
+    <div class="section-7-card">
+      <img src="https://images.meesho.com/images/products/380011061/dagmo_512.webp" alt="Product 1" />
+      <div class="section-7-detail">
+        <h3>Bella Vita Luxury CEO Men and Women Perfume</h3>
+        <p>Bella Vita Luxury CEO Man 20 ml + White Oud Unisex 20 ml Perfume Gift Combo Pack for Men and Women (Pack of
+          2).</p>
+        <div class="section-7-price">₹241</div>
+        <div class="section-link-7">See more</div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="section-7-card">
+      <img src="https://images.meesho.com/images/products/322670745/lmjpc_512.webp" alt="Product 2" />
+      <div class="section-7-detail">
+        <h3>Mobile Phone holder</h3>
+        <p>Mobile Phone Holder, Adjustable, Foldable, Anti-Skid, Wide Compatibility (Black) Tabletop</p>
+        <div class="section-7-price">₹112</div>
+        <div class="section-link-7">Explore</div>
+      </div>
+    </div>
+
+    <!-- Card 3: Advertisement Video -->
+    <div class="section-7-card">
+      <video controls autoplay muted loop poster="https://via.placeholder.com/300x200?text=Ad+Preview">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="section-7-detail">
+        <h3>Special Offer!</h3>
+        <p>Watch this video to learn about exclusive deals and promotions.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section-7-dots" id="section7-dots">
+    <span class="section-7-dot" onclick="goToSlide(0)"></span>
+    <span class="section-7-dot" onclick="goToSlide(1)"></span>
+    <span class="section-7-dot" onclick="goToSlide(2)"></span>
+  </div>
+
+  <!-- Product section -->
+  <div class="shop-wrapper">
+
+    <div class="shop-container">
+      <button class="shop-arrow left">
+        <img src="https://img.icons8.com/ios-filled/50/000000/chevron-left.png" alt="Left">
+      </button>
+
+      <div class="shop-slider" id="shopSlider">
+
+        <div class="product-card">
+          <img src="https://images-eu.ssl-images-amazon.com/images/I/710qicpT5IL._AC_UL165_SR165,165_.jpg"
+            alt="Product 1">
+          <div class="description">Saras Aajeevika Handcrafted Handpainted Wooden Up Trunk Elephant│ Handcrafted
+            Artistic Gift│ Home Decor│ Showpiece│6 Inch│621 gm (Set of 1 Pc) (Size 17 x 8 x 14 Cm) Natural Colour
+          </div>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <div class="price"> ₹1,349</div>
+        </div>
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/51jPxVfn8IL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 2">
+          <div class="description">Saras Aajeevika Ceramic Khurja Pottery Soap Dispenser | Handcrafted Handpainted
+            Glossy Dispenser | Liquid Soap Dispenser with Pump | Handwash Bottle, Refillable | Pack of 1 (380 Grms_Sky
+            Blue & Red)</div>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div class="price"> ₹248</div>
+        </div>
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/71d0arJLF+L._SX679_.jpg" alt="Product 3">
+          <div class="description">Saras Aajeevika Handmade Brass Peacock Deepak Oil Lamp -8.5 Inch| Engraved Design
+            Diwali/Deepwali Mandir Pooja Pujan Kerala Step Diya Mor Kutthu Vilakku Brass Dia Deepam Festive Home Decor
+            Items</div>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <div class="price"> ₹2,499</div>
+        </div>
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/41N2uDs-URL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 4">
+          <div class="description">Handmade Ceramic Mixing Bowl Set of 4 | Hand-Painted Clay Handi Bowls |
+            Degchi/Donga for Biryani, Curry, Dal, Raita, Snacks | Serving Katori Pots | 300ml, 500ml, 750ml, 1L |
+            Kitchen & Dining Tableware</div>
+          <div class="rating">⭐⭐⭐☆☆</div>
+          <div class="price">₹748</div>
+        </div>
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/41wtqTEy8uL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 5">
+          <div class="description">Saras AajeevikaǀHandcraftedǀDhokra ArtǀBrass Hand Bell 8" ǀHandmade Hand BellǀBrass
+            Pooja Ghantiǀ Ghanti for PoojaǀMandir GhantiǀDecorative Ghantiǀ(Brass,Yellow Colour) ǀ246 Grms.</div>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div class="price">₹799</div>
+        </div>
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/41dq+nxMw2L._SY300_SX300_.jpg" alt="Product 6">
+          <div class="description">Saras Aajeevika Handcraft Pink Marble Flower VaseǀMahaveer SHG Madhya PradeshǀSmall
+            size ǀHome and Living Room Décor Gifting| Marble Flower Vase ǀ6 Inches, Pink Marble</div>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <div class="price">₹1,159</div>
+        </div>
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/51PCJpWelPL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 7">
+          <div class="description">PREMIUM WALL HANGING SAGUNWOOD AIPAN ART FRAME - DIMENSIONS (L x W x H): 23 cm x 23
+            cm x 1 cm</div>
+          <div class="rating">⭐⭐⭐☆☆</div>
+          <div class="price">₹1,200</div>
+        </div>
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/41h+e-MlaTL._SX300_SY300_.jpg" alt="Product 8">
+          <div class="description">COTTAGE Brass Gamla Design Enameled Fruit Bowl for Living Rooms, Dining Tables, or
+            Center Table | Home & Office Décor, Pack of 1 (Multicolor_5x1.5x4 inch)</div>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <div class="price">
+            ₹833.00₹833</div>
+        </div>
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/81YfbQhNaYL._SX679_.jpg" alt="Product 9">
+          <div class="description">2 Pc Hut Handpainted Ceramic Coffee Mug - 330ml Handmade Tea/Milk Mug Cup Set for
+            Kitchen Glossy Finish Kids Glass Drinkware -Mircowave & Dishwasher Safe Ideal for Daily Use & Gifting
+          </div>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div class="price">₹368</div>
+        </div>
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/4144-hLf4mL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 10">
+          <div class="description">Saras Aajeevika 2 Pc Ceramic Handmade Coffee Mug - 200ml |Handpainted Kids Mugs
+            Gift Set Tea Cup Set Milk Mug with Legs - Mircowave & Dishwasher Safe Ideal for Daily Use Cartoon Coffee
+            Mugs for Gift</div>
+          <div class="rating">⭐⭐⭐☆☆</div>
+          <div class="price"> ₹368</div>
+        </div>
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/81ig87HuqqL._SX679_.jpg" alt="Product 11">
+          <div class="description">Saras Aajeevika 2 Pc Handmade Ceramic Large Coffee Mug - 400ml |Jumbo Milk Mugs for
+            Gifts Tea Cup Set Kitchen Dining - Mircowave & Dishwasher Safe Ideal for Daily Use & Wedding Return Gift
+            Items</div>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <div class="price">₹349</div>
+        </div>
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/41lYQ9CVVOL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 12">
+          <div class="description">Garvi Gurjari Handcrafted Sadeli Work Wooden Pen stand</div>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div class="price"> ₹1,599</div>
+        </div>
+      </div>
+
+      <button class="shop-arrow right">
+        <img src="https://img.icons8.com/ios-filled/50/000000/chevron-right.png" alt="Right">
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer sign in -->
+  <div class="sign-in-box">
+    <h2>See personalized recommendations</h2>
+    <a href="../Pages/Signin.html" class="sign-in-button">Sign In</a>
+    <div class="small-text">
+      New customer? <a href="../Pages/Signin.html">Start here.</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-2xl font-bold mb-4">Fresh Mart</div>
+          <p class="text-gray-400 mb-4">
+            Your trusted partner for premium and reasonablr products and exceptional service.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="../Pages/Home.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Products</a></li>
+            <li><a href="../Pages/About.html" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Deal with Fresh Mart</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Support</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Shipping Info</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Returns</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Warranty</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+          <div class="space-y-2 text-gray-400">
+            <p><i class="fas fa-phone mr-2"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope mr-2"></i> hello@freshmart.com</p>
+            <p><i class="fas fa-map-marker-alt mr-2"></i> San Francisco, CA</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Fresh Mart. All rights reserved. | Privacy Policy | Terms of Service</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="../Js/Home.js"></script>
+</body>
+
+</html>

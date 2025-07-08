@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Fresh Mart</title>
+    <link rel="stylesheet" href="../Css/About.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/14062/14062234.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="desktopNavbar">
+        <div class="navbar-left">
+            <a href="../Pages/Home.html" class="logo-link">
+                <img src="https://cdn-icons-png.flaticon.com/128/14062/14062234.png" alt="Logo" />
+                Fresh Mart
+            </a>
+        </div>
+
+        <div class="navbar-middle">
+            <ul>
+                <li>
+                    <a href="../Pages/Home.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                    <div class="mega-dropdown">
+                        <div class="mega-dropdown-grid">
+                            <div class="mega-dropdown-section">
+                                <h4>Electronics</h4>
+                                <ul>
+                                    <li><a href="#">Smartphones</a></li>
+                                    <li><a href="#">Laptops</a></li>
+                                    <li><a href="#">Headphones</a></li>
+                                    <li><a href="#">Tablets</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-dropdown-section">
+                                <h4>Home Appliances</h4>
+                                <ul>
+                                    <li><a href="#">Refrigerators</a></li>
+                                    <li><a href="#">Microwaves</a></li>
+                                    <li><a href="#">Washing Machines</a></li>
+                                    <li><a href="#">Televisions</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-dropdown-section">
+                                <h4>Fashion</h4>
+                                <ul>
+                                    <li><a href="#">Men's Clothing</a></li>
+                                    <li><a href="#">Women's Clothing</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Watches</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-dropdown-section">
+                                <h4>Accessories</h4>
+                                <ul>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Sunglasses</a></li>
+                                    <li><a href="#">Jewelry</a></li>
+                                    <li><a href="#">Wallets</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="../Pages/Service.html">Services</a>
+                    <div class="mega-dropdown">
+                        <div class="mega-dropdown-grid">
+                            <div class="mega-dropdown-section">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Warranty</a></li>
+                                    <li><a href="#">Shipping Info</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-dropdown-section">
+                                <h4>Business</h4>
+                                <ul>
+                                    <li><a href="#">Corporate</a></li>
+                                    <li><a href="#">Wholesale</a></li>
+                                    <li><a href="#">Partnerships</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../Pages/About.html">About</a></li>
+                <li><a href="../Pages/Supply.html">Become a Supplier</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <a href="#" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <div class="mobile-top-row" id="mobileTopRow">
+        <div class="location-address">
+            <i data-lucide="map-pin"></i>
+            <span>123 Mehsana, Gujrat</span>
+        </div>
+        <div class="mobile-notification" style="position: relative; display: inline-block;">
+            <i data-lucide="bell" style="width: 24px; height: 24px; color: black;"></i>
+            <span class="notification-badge"
+                style="position: absolute; top: -5px; right: -5px; background-color: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px;">
+                3
+            </span>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <div class="mobile-search">
+        <div class="search-container">
+            <div class="search-input">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" placeholder="Search products, services..." />
+            </div>
+            <button class="menu-btn" id="mobileMenuBtn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="/" class="logo-link">
+                <img src="https://cdn-icons-png.flaticon.com/128/14062/14062234.png" alt="Fresh Mart Logo"
+                    class="sidebar-logo" />
+            </a>
+            <h2 class="sidebar-title">Fresh Mart</h2>
+            <button class="sidebar-close-btn" id="sidebarClose" aria-label="Close Sidebar">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <ul>
+            <li>
+                <a href="../Pages/Home.html" class="active">
+                    <i data-lucide="home"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i data-lucide="shopping-bag"></i>
+                    Products
+                </a>
+            </li>
+            <li>
+                <a href="../Pages/Service.html">
+                    <i data-lucide="settings"></i>
+                    Services
+                </a>
+            </li>
+            <li>
+                <a href="../Pages/About.html">
+                    <i data-lucide="info"></i>
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="../Pages/Supply.html">
+                    <i data-lucide="handshake"></i>
+                    Become a Supplier
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-extra">
+            <a href="#" class="login-btn-sidebar">Login <i data-lucide="log-in"></i>
+            </a>
+            </a>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <div class="modal" id="authModal">
+        <div class="modal-header">
+            <h2 id="modalTitle">Login</h2>
+            <button class="close-btn" id="closeModal">&times;</button>
+        </div>
+
+        <div class="modal-tabs">
+            <div class="modal-tab active" id="loginTab">Login</div>
+            <div class="modal-tab" id="signupTab">Sign Up</div>
+        </div>
+
+        <div class="modal-body">
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required />
+                </div>
+                <button type="submit" class="form-submit">Login</button>
+                <p class="form-footer">Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form id="signupForm" class="auth-form" style="display: none;">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" placeholder="Enter your full name" required />
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password" required />
+                </div>
+                <button type="submit" class="form-submit">Sign Up</button>
+                <p class="form-footer">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center animate-fade-in">
+                <h1 class="text-4xl md:text-4xl font-bold mb-6">About Fresh Mart</h1>
+                <p class="text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed">
+                    Revolutionizing the way you experience Reasonable and premium products and exceptional service
+                    since 2018.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-in">
+                    <h2 class="text-3xl md:text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Founded in 2018 by tech enthusiasts Sarah Chen and Marcus Rodriguez, TechVibe started as a
+                        small startup in San Francisco with a simple mission: make cutting-edge technology
+                        accessible to everyone.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        What began as a garage operation has grown into a trusted e-commerce platform serving over
+                        500,000 customers worldwide. We've built our reputation on quality products, competitive
+                        prices, and customer service that goes above and beyond.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Today, we're proud to be your go-to destination for smartphones, laptops, smart home
+                        devices, gaming gear, and the latest tech innovations that shape our digital future.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="rounded-2xl p-8 text-white">
+                        <div class="grid grid-cols-2 gap-6 text-center">
+                            <div>
+                                <div class="stat-counter text-white">500K+</div>
+                                <p class="text-gray-600">Happy Customers</p>
+                            </div>
+                            <div>
+                                <div class="stat-counter text-white">50K+</div>
+                                <p class="text-gray-600">Products Sold</p>
+                            </div>
+                            <div>
+                                <div class="stat-counter text-white">98%</div>
+                                <p class="text-gray-600">Satisfaction Rate</p>
+                            </div>
+                            <div>
+                                <div class="stat-counter text-white">24/7</div>
+                                <p class="text-gray-600">Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Values</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    The principles that guide everything we do and help us deliver exceptional experiences to our
+                    customers.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Quality First</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We rigorously test every product and partner only with trusted brands to ensure you receive
+                        the highest quality technology.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Customer Centric</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Your satisfaction is our priority. We listen, adapt, and continuously improve our service
+                        based on your feedback.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Innovation</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We stay ahead of tech trends to bring you the latest innovations and emerging technologies
+                        first.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-2xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Transparency</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Honest pricing, clear policies, and open communication. No hidden fees or surprises, ever.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-leaf text-2xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Sustainability</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Committed to eco-friendly practices, sustainable packaging, and supporting green technology
+                        initiatives.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-handshake text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Partnership</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Building lasting relationships with customers, suppliers, and our community for mutual
+                        success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-white-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
+                <p class="text-sm text-gray-600 max-w-2xl mx-auto">
+                    The passionate individuals behind TechVibe who work tirelessly to bring you the best
+                    experience.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl p-6 text-center card-hover">
+                    <div
+                        class="w-24 h-24 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
+                        PB
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Panchal Bhargav</h3>
+                    <p class="text-indigo-600 font-medium mb-3">Co-Founder & CEO</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Former Apple engineer with 15+ years in tech innovation and product development.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 text-center card-hover">
+                    <div
+                        class="w-24 h-24 bg-gradient-to-r from-green-500 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
+                        MR
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Marcus Rodriguez</h3>
+                    <p class="text-indigo-600 font-medium mb-3">Co-Founder & CTO</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Tech visionary and former Google engineer specializing in e-commerce platforms and AI.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 text-center card-hover">
+                    <div
+                        class="w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
+                        EJ
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Emily Johnson</h3>
+                    <p class="text-indigo-600 font-medium mb-3">Head of Customer Experience</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Customer service expert ensuring every interaction exceeds expectations.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 text-center card-hover">
+                    <div
+                        class="w-24 h-24 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
+                        DA
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">David Patel</h3>
+                    <p class="text-indigo-600 font-medium mb-3">Head of Operations</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Supply chain expert ensuring fast, reliable delivery and inventory management.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Mission</h2>
+                <div class="w-24 h-1 mx-auto mb-8"></div>
+            </div>
+            <div class="bg-blue-300 f rounded-2xl p-8 md:p-12 text-white text-center">
+                <p class="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8">
+                    "At Fresh Mart, our mission is to make Best, Reasonable, and high-quality product accessible to
+                    every home. We are committed to sourcing responsibly, supporting local producers, and delivering
+                    product you can trust—straight to your doorstep. With a focus on convenience, sustainability,
+                    and
+                    customer satisfaction, we aim to simplify everyday shopping while promoting fashionable
+                    lifestyles
+                    and stronger communities."
+                </p>
+                <div class="flex flex-wrap justify-center gap-8 text-sm">
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Premium Quality</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Fair Pricing</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Expert Support</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Fast Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Recognition & Awards</h2>
+                <p class="text-lg text-gray-600">We're proud of the recognition we've received for our commitment to
+                    excellence.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 text-center card-hover">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-trophy text-2xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Best E-commerce Platform 2025</h3>
+                    <p class="text-gray-600">E-commerce Innovation Awards</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 text-center card-hover">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Customer Choice Award 2023</h3>
+                    <p class="text-gray-600">Consumer Electronics Association</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 text-center card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Sustainability Leader 2023</h3>
+                    <p class="text-gray-600">Green Business Network</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Experience Fresh Mart?</h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Join thousands of satisfied customers who trust Fresh Mart for their product needs.
+                Discover the difference quality and service make.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="../Pages/Home.html"
+                    class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-opacity">
+                    Shop Now
+                </a>
+                <a href="#"
+                    class="border-2 border-gray-600 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:border-gray-400 transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">Fresh Mart</div>
+                    <p class="text-gray-400 mb-4">
+                        Your trusted partner for premium and reasonablr products and exceptional service.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../Pages/Home.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Products</a></li>
+                        <li><a href="../Pages/About.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Shipping Info</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Returns</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Warranty</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-phone mr-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope mr-2"></i> hello@freshmart.com</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> San Francisco, CA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Fresh Mart. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../Js/About.js"></script>
+</body>
+
+</html>

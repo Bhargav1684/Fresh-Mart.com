@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Women Fashion | Fresh Mart</title>
+    <link rel="stylesheet" href="../Css/Womenfashion.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/14062/14062234.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="desktopNavbar">
+        <div class="navbar-left">
+            <a href="../Pages/Home.html" class="logo-link">
+                <img src="https://cdn-icons-png.flaticon.com/128/14062/14062234.png" alt="Logo" />
+                Fresh Mart
+            </a>
+        </div>
+
+        <div class="navbar-middle">
+            <ul>
+                <li>
+                    <a href="../Pages/Home.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                    <div class="mega-dropdown">
+                        <div class="mega-dropdown-grid">
+                            <div class="mega-dropdown-section">
+                                <h4>Electronics</h4>
+                                <ul>
+                                    <li><a href="#">Smartphones</a></li>
+                                    <li><a href="#">Laptops</a></li>
+                                    <li><a href="#">Headphones</a></li>
+                                    <li><a href="#">Tablets</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-dropdown-section">
+                                <h4>Home Appliances</h4>
+                                <ul>
+                                    <li><a href="#">Refrigerators</a></li>
+                                    <li><a href="#">Microwaves</a></li>
+                                    <li><a href="#">Washing Machines</a></li>
+                                    <li><a href="#">Televisions</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-dropdown-section">
+                                <h4>Fashion</h4>
+                                <ul>
+                                    <li><a href="#">Men's Clothing</a></li>
+                                    <li><a href="#">Women's Clothing</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Watches</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-dropdown-section">
+                                <h4>Accessories</h4>
+                                <ul>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Sunglasses</a></li>
+                                    <li><a href="#">Jewelry</a></li>
+                                    <li><a href="#">Wallets</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="../Pages/Service.html">Services</a>
+                    <div class="mega-dropdown">
+                        <div class="mega-dropdown-grid">
+                            <div class="mega-dropdown-section">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Warranty</a></li>
+                                    <li><a href="#">Shipping Info</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-dropdown-section">
+                                <h4>Business</h4>
+                                <ul>
+                                    <li><a href="#">Corporate</a></li>
+                                    <li><a href="#">Wholesale</a></li>
+                                    <li><a href="#">Partnerships</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../Pages/About.html">About</a></li>
+                <li><a href="../Pages/Supply.html">Become a Supplier</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <a href="#" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <div class="mobile-top-row" id="mobileTopRow">
+        <div class="location-address">
+            <i data-lucide="map-pin"></i>
+            <span>123 Mehsana, Gujrat</span>
+        </div>
+        <div class="mobile-notification" style="position: relative; display: inline-block;">
+            <i data-lucide="bell" style="width: 24px; height: 24px; color: black;"></i>
+            <span class="notification-badge"
+                style="position: absolute; top: -5px; right: -5px; background-color: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px;">
+                3
+            </span>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <div class="mobile-search">
+        <div class="search-container">
+            <div class="search-input">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" placeholder="Search products, services..." />
+            </div>
+            <button class="menu-btn" id="mobileMenuBtn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="../Pages/Home.html" class="logo-link">
+                <img src="https://cdn-icons-png.flaticon.com/128/14062/14062234.png" alt="Fresh Mart Logo"
+                    class="sidebar-logo" />
+            </a>
+            <h2 class="sidebar-title">Fresh Mart</h2>
+            <button class="sidebar-close-btn" id="sidebarClose" aria-label="Close Sidebar">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <ul>
+            <li>
+                <a href="../Pages/Home.html" class="active">
+                    <i data-lucide="home"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i data-lucide="shopping-bag"></i>
+                    Products
+                </a>
+            </li>
+            <li>
+                <a href="../Pages/Service.html">
+                    <i data-lucide="settings"></i>
+                    Services
+                </a>
+            </li>
+            <li>
+                <a href="../Pages/About.html">
+                    <i data-lucide="info"></i>
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="../Pages/Supply.html">
+                    <i data-lucide="handshake"></i>
+                    Become a Supplier
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-extra">
+            <a href="#" class="login-btn-sidebar">Login <i data-lucide="log-in"></i>
+            </a>
+            </a>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <div class="modal" id="authModal">
+        <div class="modal-header">
+            <h2 id="modalTitle">Login</h2>
+            <button class="close-btn" id="closeModal">&times;</button>
+        </div>
+
+        <div class="modal-tabs">
+            <div class="modal-tab active" id="loginTab">Login</div>
+            <div class="modal-tab" id="signupTab">Sign Up</div>
+        </div>
+
+        <div class="modal-body">
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required />
+                </div>
+                <button type="submit" class="form-submit">Login</button>
+                <p class="form-footer">Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form id="signupForm" class="auth-form" style="display: none;">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" placeholder="Enter your full name" required />
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password" required />
+                </div>
+                <button type="submit" class="form-submit">Sign Up</button>
+                <p class="form-footer">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+        <aside class="filters">
+            <h3>Filters</h3>
+
+            <div class="filter-group">
+                <label>Category</label>
+                <label><input type="checkbox" name="category" value="T-Shirts" /> T-Shirts</label>
+                <label><input type="checkbox" name="category" value="Jeans" /> Jeans</label>
+                <label><input type="checkbox" name="category" value="Kurti" /> Kurti</label>
+                <label><input type="checkbox" name="category" value="Western" /> Western</label>
+                <label><input type="checkbox" name="category" value="Heals" /> Heals</label>
+                <label><input type="checkbox" name="category" value="Watch" /> Watch</label>
+                <label><input type="checkbox" name="category" value="Perfume" /> Perfume</label>
+            </div>
+
+            <div class="filter-group">
+                <label>Size</label>
+                <label><input type="checkbox" name="size" value="S" /> S</label>
+                <label><input type="checkbox" name="size" value="M" /> M</label>
+                <label><input type="checkbox" name="size" value="L" /> L</label>
+                <label><input type="checkbox" name="size" value="XL" /> XL</label>
+            </div>
+
+            <div class="filter-group">
+                <label>Color</label>
+                <label><input type="checkbox" name="color" value="Black" /> Black</label>
+                <label><input type="checkbox" name="color" value="White" /> White</label>
+                <label><input type="checkbox" name="color" value="Blue" /> Blue</label>
+                <label><input type="checkbox" name="color" value="Red" /> Red</label>
+            </div>
+
+            <div class="filter-group">
+                <label for="priceRange">Price (max)</label>
+                <input type="range" id="priceRange" min="10" max="₹2000" step="10" value="₹2000" />
+                <div><span id="priceValue">₹2000</span></div>
+            </div>
+
+            <button id="clearFilters"
+                style="padding:0.6rem 1rem; background:#007bff; border:none; color:#ffffff; border-radius:4px; cursor:pointer; font-weight:600; width: 100%;">Clear
+                Filters</button>
+        </aside>
+
+        <section class="products-section">
+            <div class="sort-bar">
+                <label for="sortSelect">Sort by:</label>
+                <select id="sortSelect">
+                    <option value="default">Default</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="name-desc">Name: Z to A</option>
+                </select>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Products go here dynamically -->
+            </div>
+
+            <div class="pagination" id="pagination">
+                <!-- Pagination buttons -->
+            </div>
+        </section>
+    </div>
+    <script src="../Js/Womenfashion.js"></script>
+</body>
+
+</html>

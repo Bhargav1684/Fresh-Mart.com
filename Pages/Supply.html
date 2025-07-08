@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Become a Supplier | Fresh Mart</title>
+  <link rel="stylesheet" href="../Css/Supply.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/14062/14062234.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="desktopNavbar">
+    <div class="navbar-left">
+      <a href="../Pages/Home.html" class="logo-link">
+        <img src="https://cdn-icons-png.flaticon.com/128/14062/14062234.png" alt="Logo" />
+        Fresh Mart
+      </a>
+    </div>
+
+    <div class="navbar-middle">
+      <ul>
+        <li>
+          <a href="../Pages/Home.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Products</a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown-grid">
+              <div class="mega-dropdown-section">
+                <h4>Electronics</h4>
+                <ul>
+                  <li><a href="#">Smartphones</a></li>
+                  <li><a href="#">Laptops</a></li>
+                  <li><a href="#">Headphones</a></li>
+                  <li><a href="#">Tablets</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown-section">
+                <h4>Home Appliances</h4>
+                <ul>
+                  <li><a href="#">Refrigerators</a></li>
+                  <li><a href="#">Microwaves</a></li>
+                  <li><a href="#">Washing Machines</a></li>
+                  <li><a href="#">Televisions</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown-section">
+                <h4>Fashion</h4>
+                <ul>
+                  <li><a href="#">Men's Clothing</a></li>
+                  <li><a href="#">Women's Clothing</a></li>
+                  <li><a href="#">Shoes</a></li>
+                  <li><a href="#">Watches</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown-section">
+                <h4>Accessories</h4>
+                <ul>
+                  <li><a href="#">Bags</a></li>
+                  <li><a href="#">Sunglasses</a></li>
+                  <li><a href="#">Jewelry</a></li>
+                  <li><a href="#">Wallets</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="../Pages/Service.html">Services</a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown-grid">
+              <div class="mega-dropdown-section">
+                <h4>Support</h4>
+                <ul>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Warranty</a></li>
+                  <li><a href="#">Shipping Info</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown-section">
+                <h4>Business</h4>
+                <ul>
+                  <li><a href="#">Corporate</a></li>
+                  <li><a href="#">Wholesale</a></li>
+                  <li><a href="#">Partnerships</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="../Pages/About.html">About</a></li>
+        <li><a href="../Pages/Supply.html">Become a Supplier</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-right">
+      <a href="#" class="login-btn">Login</a>
+    </div>
+  </nav>
+
+  <div class="mobile-top-row" id="mobileTopRow">
+    <div class="location-address">
+      <i data-lucide="map-pin"></i>
+      <span>123 Mehsana, Gujrat</span>
+    </div>
+    <div class="mobile-notification" style="position: relative; display: inline-block;">
+      <i data-lucide="bell" style="width: 24px; height: 24px; color: black;"></i>
+      <span class="notification-badge"
+        style="position: absolute; top: -5px; right: -5px; background-color: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px;">
+        3
+      </span>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <div class="mobile-search">
+    <div class="search-container">
+      <div class="search-input">
+        <i data-lucide="search" class="search-icon"></i>
+        <input type="text" placeholder="Search products, services..." />
+      </div>
+      <button class="menu-btn" id="mobileMenuBtn">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../Pages/Home.html" class="logo-link">
+        <img src="https://cdn-icons-png.flaticon.com/128/14062/14062234.png" alt="Fresh Mart Logo"
+          class="sidebar-logo" />
+      </a>
+      <h2 class="sidebar-title">Fresh Mart</h2>
+      <button class="sidebar-close-btn" id="sidebarClose" aria-label="Close Sidebar">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <ul>
+      <li>
+        <a href="../Pages/Home.html" class="active">
+          <i data-lucide="home"></i>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i data-lucide="shopping-bag"></i>
+          Products
+        </a>
+      </li>
+      <li>
+        <a href="../Pages/Service.html">
+          <i data-lucide="settings"></i>
+          Services
+        </a>
+      </li>
+      <li>
+        <a href="../Pages/About.html">
+          <i data-lucide="info"></i>
+          About
+        </a>
+      </li>
+      <li>
+        <a href="../Pages/Supply.html">
+          <i data-lucide="handshake"></i>
+          Become a Supplier
+        </a>
+      </li>
+    </ul>
+
+    <div class="sidebar-extra">
+      <a href="#" class="login-btn-sidebar">Login <i data-lucide="log-in"></i>
+      </a>
+      </a>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <div class="modal" id="authModal">
+    <div class="modal-header">
+      <h2 id="modalTitle">Login</h2>
+      <button class="close-btn" id="closeModal">&times;</button>
+    </div>
+
+    <div class="modal-tabs">
+      <div class="modal-tab active" id="loginTab">Login</div>
+      <div class="modal-tab" id="signupTab">Sign Up</div>
+    </div>
+
+    <div class="modal-body">
+      <!-- Login Form -->
+      <form id="loginForm" class="auth-form">
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Enter your password" required />
+        </div>
+        <button type="submit" class="form-submit">Login</button>
+        <p class="form-footer">Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+      </form>
+
+      <!-- Sign Up Form -->
+      <form id="signupForm" class="auth-form" style="display: none;">
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" placeholder="Enter your full name" required />
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" placeholder="Create a password" required />
+        </div>
+        <button type="submit" class="form-submit">Sign Up</button>
+        <p class="form-footer">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-blue-300 py-32">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-10 px-6">
+      <div class="flex-1">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Partner with Fresh Mart & Grow Your Business</h2>
+        <p class="text-lg mb-6">Join thousands of successful suppliers scaling their business with our transparent and
+          powerful marketplace platform.</p>
+        <a href="#join"
+          class="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Become a Supplier
+          Today</a>
+      </div>
+      <div class="flex-1">
+        <img src="https://supplier.meesho.com/images/rathi-family-testimonial.png" alt="Fresh produce"
+          class="rounded-lg shadow-md w-full" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section --> 
+  <section id="benefits" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Why Suppliers Love Fresh Mart</h2>
+      <div class="grid gap-10 md:grid-cols-3">
+        <!-- Each Benefit -->
+        <div class="p-6 border-[2px] border-[#ddd] bg-white rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-3xl mb-4">💰</div>
+          <h3 class="font-semibold text-xl mb-2">No Penalty Charges</h3>
+          <p>No hidden penalties or surprise deductions—transparent earnings every time.</p>
+        </div>
+        <div class="p-6 border-[2px] border-[#ddd] bg-white rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-3xl mb-4">📈</div>
+          <h3 class="font-semibold text-xl mb-2">Unlimited Growth Potential</h3>
+          <p>Grow without limits, whether you're a small vendor or a large operation.</p>
+        </div>
+        <div class="p-6 border-[2px] border-[#ddd] bg-white rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-3xl mb-4">🤝</div>
+          <h3 class="font-semibold text-xl mb-2">Fair Commission</h3>
+          <p>Rates starting from 8% — the more you sell, the less you pay.</p>
+        </div>
+        <div class="p-6 border-[2px] border-[#ddd] bg-white rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-3xl mb-4">🚀</div>
+          <h3 class="font-semibold text-xl mb-2">Marketing Support</h3>
+          <p>Get featured in sales campaigns and targeted promotions.</p>
+        </div>
+        <div class="p-6 border-[2px] border-[#ddd] bg-white rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-3xl mb-4">📱</div>
+          <h3 class="font-semibold text-xl mb-2">Advanced Analytics</h3>
+          <p>Access performance dashboards and customer insights easily.</p>
+        </div>
+        <div class="p-6 border-[2px] border-[#ddd] bg-white rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-3xl mb-4">🎯</div>
+          <h3 class="font-semibold text-xl mb-2">Dedicated Support</h3>
+          <p>24/7 help from onboarding to daily operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-10">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Experiences Suppliers Love to Talk About</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Testimonial Card -->
+        <div class="bg-white p-6 rounded shadow">
+          <p class="mb-4">Fresh Mart transformed my small organic farm into a thriving business. My sales increased 300%
+            in just 6 months!</p>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-green-200 text-green-800 rounded-full flex items-center justify-center font-bold">
+              RM</div>
+            <div>
+              <strong>Raj Mehta</strong><br />
+              <small>Organic Vegetables</small>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <p class="mb-4">No penalties and a transparent model gave me confidence to expand. Now a top dairy supplier!
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-green-200 text-green-800 rounded-full flex items-center justify-center font-bold">
+              SP</div>
+            <div>
+              <strong>Sunita Patel</strong><br />
+              <small>Dairy Products</small>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <p class="mb-4">The analytics dashboard helped cut wastage by 40% while increasing profits.</p>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-green-200 text-green-800 rounded-full flex items-center justify-center font-bold">
+              AK</div>
+            <div>
+              <strong>Arjun Kumar</strong><br />
+              <small>Fruits & Veggies</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">How It Works - Step by Step</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Step Cards -->
+        <div>
+          <div class="text-2xl font-bold text-green-600 mb-2">1</div>
+          <h3 class="font-semibold text-lg">Sign Up & Verify</h3>
+          <p>Create an account and verify your business within 24 hours.</p>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-green-600 mb-2">2</div>
+          <h3 class="font-semibold text-lg">Set Up Your Store</h3>
+          <p>Upload your catalog, set prices, and customize your profile.</p>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-green-600 mb-2">3</div>
+          <h3 class="font-semibold text-lg">Get Listed & Featured</h3>
+          <p>Get visibility through our platform and promotions.</p>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-green-600 mb-2">4</div>
+          <h3 class="font-semibold text-lg">Receive Orders</h3>
+          <p>Orders roll in with real-time updates and notifications.</p>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-green-600 mb-2">5</div>
+          <h3 class="font-semibold text-lg">Fulfill & Deliver</h3>
+          <p>Ship through our partners or use your own logistics.</p>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-green-600 mb-2">6</div>
+          <h3 class="font-semibold text-lg">Get Paid & Grow</h3>
+          <p>Get paid fast and use analytics to scale further.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Growth Section -->
+  <section class="py-20">
+    <div class="container mx-auto px-6 flex flex-col lg:flex-row items-start gap-12">
+      <div class="flex-1">
+        <h2 class="text-3xl font-bold mb-4">Grow Your Business with Fresh Mart</h2>
+        <p class="mb-6">Our platform equips you with all the tools to scale confidently:</p>
+        <ul class="space-y-3 text-lg">
+          <li>✅ Advanced inventory management</li>
+          <li>✅ Real-time sales tracking</li>
+          <li>✅ Customer relationship tools</li>
+          <li>✅ Seasonal demand forecasting</li>
+          <li>✅ Multi-channel integration</li>
+        </ul>
+      </div>
+      <div class="flex-1 grid grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded shadow text-center">
+          <div class="text-2xl font-bold text-green-600">5000+</div>
+          <div>Active Suppliers</div>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-center">
+          <div class="text-2xl font-bold text-green-600">2M+</div>
+          <div>Monthly Orders</div>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-center">
+          <div class="text-2xl font-bold text-green-600">95%</div>
+          <div>Supplier Satisfaction</div>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-center">
+          <div class="text-2xl font-bold text-green-600">24/7</div>
+          <div>Support Available</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer CTA -->
+  <section id="join" class="bg-blue-300 py-16 text-white text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-4">Ready to Start Your Success Story?</h2>
+      <p class="mb-8">Join Fresh Mart today and become part of a fresh food revolution.</p>
+      <a href="#" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded hover:bg-blue-700 transition">Start
+        Selling Today</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-2xl font-bold mb-4">Fresh Mart</div>
+          <p class="text-gray-400 mb-4">
+            Your trusted partner for premium and reasonablr products and exceptional service.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="../Pages/Home.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Products</a></li>
+            <li><a href="../Pages/About.html" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Support</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Shipping Info</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Returns</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Warranty</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+          <div class="space-y-2 text-gray-400">
+            <p><i class="fas fa-phone mr-2"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope mr-2"></i> hello@freshmart.com</p>
+            <p><i class="fas fa-map-marker-alt mr-2"></i> San Francisco, CA</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Fresh Mart. All rights reserved. | Privacy Policy | Terms of Service</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../Js/Supply.js"></script>
+</body>
+
+</html>
